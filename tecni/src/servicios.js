@@ -1,13 +1,11 @@
-import './Menu.css';
+// import './Menu.css';
 import React from 'react';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
 import { makeStyles, styled } from '@material-ui/core/styles';
-
 import Gal from './gallery';
-import {PersonalizadoMoto, Valla, PasaCalle, Aviso } from './fotos';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { PersonalizadoMoto, Valla, PasaCalle, Aviso } from './fotos';
 
 
 export default function ServiMenu() {
@@ -31,26 +29,18 @@ export default function ServiMenu() {
         <ListItem button onClick={() => { HandleClick("ImpresionDigital") }}>
           <ListItemText primary="Impresion Digital" />
         </ListItem>
-        <Collapse in={open.ImpresionDigital} timeout="auto" unmountOnExit> 
-
-          <ParallaxProvider>     
-            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+        <Collapse in={open.ImpresionDigital} timeout="auto" unmountOnExit>
               <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto}/></div>
+              <div><Gal photos={PersonalizadoMoto} /></div>
               <div></div>
               <div> Personalizados de motos</div>
-              <div><Gal photos={Valla}/></div>
+              <div><Gal photos={Valla} /></div>
               <div></div>
               <div> Personalizados de motos</div>
-              <div><Gal photos={PasaCalle}/></div>
+              <div><Gal photos={PasaCalle} /></div>
               <div></div>
               <div> Personalizados de motos</div>
-              <div><Gal photos={Aviso}/></div>
-            </Parallax>
-          </ParallaxProvider>  
-
-         
-
+              <div><Gal photos={Aviso} /></div>
         </Collapse>
       </list>
 
@@ -61,14 +51,11 @@ export default function ServiMenu() {
           <ListItemText primary="Corte laser" />
         </ListItem>
         <Collapse in={open.Cortelaser} timeout="auto" unmountOnExit>
-         
-        <ParallaxProvider>     
-            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+
               <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto}/></div>
-            </Parallax>
-          </ParallaxProvider>
-          
+              <div><Gal photos={PersonalizadoMoto} /></div>
+
+
         </Collapse>
       </list>
 
@@ -79,12 +66,10 @@ export default function ServiMenu() {
           <ListItemText primary="Calcomanias en Corte" />
         </ListItem>
         <Collapse in={open.CalcomaniasEnCorte} timeout="auto" unmountOnExit>
-        <ParallaxProvider>     
-            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+
               <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto}/></div>
-            </Parallax>
-          </ParallaxProvider>
+              <div><Gal photos={PersonalizadoMoto} /></div>
+
         </Collapse>
       </list>
 
@@ -95,12 +80,10 @@ export default function ServiMenu() {
           <ListItemText primary="Polarizados" />
         </ListItem>
         <Collapse in={open.Polarizados} timeout="auto" unmountOnExit>
-        <ParallaxProvider>     
-            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+
               <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto}/></div>
-            </Parallax>
-          </ParallaxProvider>
+              <div><Gal photos={PersonalizadoMoto} /></div>
+
         </Collapse>
       </list>
 
@@ -114,15 +97,13 @@ export default function ServiMenu() {
 
 
         <Collapse in={open.Bolantería} timeout="auto" unmountOnExit>
-        <div>
-          <ParallaxProvider>     
-            <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-              <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto}/></div>
-            </Parallax>
-          </ParallaxProvider>
+          <div>
+
+                <div> Personalizados de motos</div>
+                <div><Gal photos={PersonalizadoMoto} /></div>
+
           </div>
-       
+
         </Collapse>
       </list>
     </div>

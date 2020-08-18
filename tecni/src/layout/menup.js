@@ -1,23 +1,18 @@
 import './Menu.css'
 import React from "react";
-import ServiMenu from './servicios.js';
-import Nosotro from './nosotros.js';
-import Inicio from './home.js';
-import Contacto from './contacto.js';
+import ServiMenu from '../servicios.js';
+import Nosotro from '../nosotros.js';
+import Inicio from '../home.js';
+import Contacto from '../contacto.js';
 import Grid from '@material-ui/core/Grid';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 
 export default function MenuP() {
   return (
     <Router>
-      <div style={{width:"100%"}} >
-        <Grid container spacing = {0}>
+      <div style={{ width: "100%" }} >
+        <Grid container spacing={0}>
           <Grid item md={3} xs={3} sm={3}>
             <Link to="/Home" style={{ textDecoration: 'none' }} >Inicio</Link>
           </Grid>

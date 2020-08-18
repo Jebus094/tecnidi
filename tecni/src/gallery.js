@@ -17,11 +17,7 @@ function Gal({photos}){
     setItems(arrayMove(items, oldIndex, newIndex));
   };
 
-  return (
-    <div>
-      <SortableGallery items={items} onSortEnd={onSortEnd} axis={"xy"} />
-    </div>
-  );
+  return (<SortableGallery items={items} onSortEnd={onSortEnd} axis={"xy"} />);
 }
 export default Gal;
 
