@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jebus094/tecnidi/issues"
   },
-  "homepage": "https://github.com/Jebus094/tecnidi#readme"
+  "homepage": "https://github.com/Jebus094/tecnidi#readme",
+  "dependencies": {
+    "react-reveal": "^1.2.2"
+  }
 }

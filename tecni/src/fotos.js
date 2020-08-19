@@ -18,16 +18,6 @@ export const PersonalizadoMoto = [
     src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
     width: 3,
     height: 4
-  },
-  {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-    width: 4,
-    height: 3
   }
 ];
 export const Valla=[
@@ -89,6 +79,11 @@ export const Aviso=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Pendon=[
@@ -99,6 +94,11 @@ export const Pendon=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -123,6 +123,11 @@ export const Vinilo=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Mural=[
@@ -133,6 +138,11 @@ export const Mural=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -157,6 +167,11 @@ export const TarjPresentacion=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Volanteria=[
@@ -167,6 +182,11 @@ export const Volanteria=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -191,6 +211,11 @@ export const Facturero=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Sellos=[
@@ -201,6 +226,11 @@ export const Sellos=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -225,6 +255,11 @@ export const Boletas=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const CortVinilo=[
@@ -235,6 +270,11 @@ export const CortVinilo=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -259,6 +299,11 @@ export const Reflectivo=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const PersonCM=[
@@ -269,6 +314,11 @@ export const PersonCM=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -293,6 +343,11 @@ export const Polarizado=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const AvAcrilico=[
@@ -303,6 +358,11 @@ export const AvAcrilico=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },
@@ -327,6 +387,11 @@ export const Letreros=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Pgb=[
@@ -344,6 +409,11 @@ export const Pgb=[
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Dec=[
@@ -354,6 +424,11 @@ export const Dec=[
   },
   {
     src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
   },

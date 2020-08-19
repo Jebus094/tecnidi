@@ -3,6 +3,8 @@ import React from 'react';
 import { makeStyles, styled } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
 import img1 from '../src/assets/img/img1.png';
 import img2 from '../src/assets/img/img2.png';
 import img3 from '../src/assets/img/img3.png';
@@ -41,29 +43,29 @@ export default function ServiMenu() {
 
     return (
 
-        <div className={classes.root}>
+        <div className={classes.root} style={{padding:'2em', backgroundColor:'black'}}  >
             <Grid container spacing={3}>
                 <Grid item md={12} xs={12} as={12}>
-                    <h1>Impresión digital</h1>
+                    <Rotate><h1>Impresión digital</h1></Rotate>
                 </Grid>
                 <Grid container justify="center" spacing={1} >
                     <Grid item md={4} xs={4} sm={4}>
-                        <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
+                          <div><Fade left><h2>Motos Personalizadas</h2> </Fade></div>
                     </Grid>
                     <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }}>
-                        <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img1 + "')" }}></div>
+                          <Fade top><div className={classes.imgStyle} style={{ backgroundImage: "url('" + img1 + "')" }}></div></Fade>
                     </Grid>
-                    <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }}>
-                        <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img2 + "')" }}></div>
+                    <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }} >
+                          <Fade right> <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img2 + "')" }}> </div></Fade>
                     </Grid>
                 </Grid>
 
                 <Grid container justify="center" spacing={1} style={{ marginTop: '0.5em' }}  >
                     <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }}>
-                        <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img3 + "')" }}></div>
+                        <Fade bottom><div className={classes.imgStyle} style={{ backgroundImage: "url('" + img3 + "')" }}></div></Fade> 
                     </Grid>
-                    <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }}>
-                        <div style={{ backgroundImage: "url('" + img4 + "')" }} className={classes.imgStyle}></div>
+                    <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }} alignItems="center" >
+                        <Fade bottom><div style={{ backgroundImage: "url('" + img4 + "')" }} className={classes.imgStyle}></div></Fade>
                     </Grid>
                 </Grid>
 
