@@ -31,7 +31,7 @@ export default function ServiMenu() {
     
     <div className={classes.root}>
     <Grid container spacing={3}>
-      <Grid item md={12} xs={12} am={12}>
+      <Grid item md={12} xs={12} as={12}>
        <h1>Impresión digital</h1>
       </Grid>
       <Grid container justify = "center" spacing={1} >

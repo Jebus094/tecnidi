@@ -12,7 +12,7 @@ export default function MenuP() {
   return (
     <Router>
       <div style={{ width: "100%" }} >
-        <Grid container spacing={0}>
+        <Grid container spacing={0} className="Menu">
           <Grid item md={3} xs={3} sm={3}>
             <Link to="/Home" style={{ textDecoration: 'none' }} >Inicio</Link>
           </Grid>
