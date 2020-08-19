@@ -18,6 +18,11 @@ export const PersonalizadoMoto = [
     src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
     width: 3,
     height: 4
+  },
+  {
+    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    width: 4,
+    height: 3
   }
 ];
 export const Valla=[

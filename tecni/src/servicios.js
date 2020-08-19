@@ -38,18 +38,24 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Cuadros = ({img}) => {
-
+const Cuadros = ({img, i}) => {
+    const style = {
+        img: {
+            width: '100%',
+            height: '100%',
+            backgroundSize: 'cover',
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center", 
+            backgroundImage: "url('" + img + "')"
+        }
+    }
     return (
-        <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }}>
-            <Fade top><div  style={{
-                width: '100%',
-                height: '100%',
-                backgroundSize: 'cover',
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center", 
-                backgroundImage: "url('" + img + "')"
-            }}></div></Fade>
+        <Grid item md={(!(i%2)) ? 4: 6} xs={(!(i%2)) ? 4: 6} sm={(!(i%2)) ? 4: 6} style={{ height: '10em' }}>
+            {(!(i%2)) ? 
+                <Fade top><div  style={style.img}></div></Fade>
+                :
+                <Fade right cascade><div  style={style.img}></div></Fade>
+                }
         </Grid>
     )
 
@@ -60,7 +66,6 @@ const Cuadros = ({img}) => {
 export default function ServiMenu() {
 
     const classes = useStyles();
-
     return (
 
         <div className={classes.root} style={{ padding: '2em', backgroundColor: 'black' }}  >
@@ -72,22 +77,26 @@ export default function ServiMenu() {
                     <Grid item md={4} xs={4} sm={4}>
                         <div><Fade left><h2>Motos Personalizadas</h2> </Fade></div>
                     </Grid>
-                    <Cuadros img={img1} />
-                    <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }}>
-                        <Fade top><div className={classes.imgStyle} style={{ backgroundImage: "url('" + img1 + "')" }}></div></Fade>
-                    </Grid>
-                    <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }} >
-                        <Fade right> <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img2 + "')" }}> </div></Fade>
-                    </Grid>
+                    {PersonalizadoMoto.map((res, i)=>{
+                        return (<Cuadros img={res.src}  i={i} key={'img'+ i} />)
+                    })}
                 </Grid>
 
                 <Grid container justify="center" spacing={1} style={{ marginTop: '0.5em' }}  >
-                    <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }}>
-                        <Fade bottom><div className={classes.imgStyle} style={{ backgroundImage: "url('" + img3 + "')" }}></div></Fade>
+                     <Grid item md={4} xs={4} sm={4}>
+                        <div><Fade left><h2>Valla publicitaria</h2> </Fade></div>
                     </Grid>
-                    <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }} alignItems="center" >
-                        <Fade bottom><div style={{ backgroundImage: "url('" + img4 + "')" }} className={classes.imgStyle}></div></Fade>
+                    {Valla.map((res, i)=>{
+                        return (<Cuadros img={res.src} i={i} key={'img'+ i} />)
+                    })}
+                </Grid>
+                <Grid container justify="center" spacing={1} style={{ marginTop: '0.5em' }}  >
+                     <Grid item md={4} xs={4} sm={4}>
+                        <div><Fade left><h2>Pasa Calle</h2> </Fade></div>
                     </Grid>
+                    {PasaCalle.map((res, i)=>{
+                        return (<Cuadros img={res.src} i={i} key={'img'+ i} />)
+                    })}
                 </Grid>
 
             </Grid>
