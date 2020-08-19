@@ -3,6 +3,11 @@ import React from 'react';
 import { makeStyles, styled } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
+import img1 from '../src/assets/img/img1.png';
+import {img2} from '../src/assets/img/img2.png';
+import {img3} from '../src/assets/img/img3.png';
+import {img4} from '../src/assets/img/img4.png';
+
 /*import ListItem from '@material-ui/core/ListItem';*/
 /*import ListItemText from '@material-ui/core/ListItemText';*/
 /*import Collapse from '@material-ui/core/Collapse';*/
@@ -39,9 +44,11 @@ export default function ServiMenu() {
           <Grid item md={4} xs={4} sm ={4}>
             <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
           </Grid>
-          <Grid item md={4} xs={4} sm ={4}>
-            <Paper className={classes.paper}></Paper>
+                 
+          <Grid  item md={4} xs={4} sm ={4} 
+                style={{height: '10em' }}> <div><img src={img1} /></div> 
           </Grid>
+
           <Grid item md={4} xs={4} sm ={4}>
             <Paper className={classes.paper}></Paper>
           </Grid>
