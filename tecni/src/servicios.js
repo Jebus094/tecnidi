@@ -4,9 +4,9 @@ import { makeStyles, styled } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import img1 from '../src/assets/img/img1.png';
-import {img2} from '../src/assets/img/img2.png';
-import {img3} from '../src/assets/img/img3.png';
-import {img4} from '../src/assets/img/img4.png';
+import img2 from '../src/assets/img/img2.png';
+import img3 from '../src/assets/img/img3.png';
+import img4 from '../src/assets/img/img4.png';
 
 /*import ListItem from '@material-ui/core/ListItem';*/
 /*import ListItemText from '@material-ui/core/ListItemText';*/
@@ -45,12 +45,12 @@ export default function ServiMenu() {
             <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
           </Grid>
                  
-          <Grid  item md={4} xs={4} sm ={4} style={{height: '10em' }}> 
-            <img src={img1} style={{width: '100%',height: '100%'}} />
+          <Grid item md={4} xs={4} sm ={4} style={{height: '10em' }}> 
+                <img src={img1} style={{width: '100%',height: '100%'}} />
           </Grid>
 
-          <Grid item md={4} xs={4} sm ={4}>
-            <Paper className={classes.paper}></Paper>
+          <Grid item md={4} xs={4} sm ={4}style={{height: '10em' }}>
+                <img src={img2} style={{width: '100%',height: '100%'}} />
           </Grid>
           
         
@@ -58,11 +58,11 @@ export default function ServiMenu() {
 
       <Grid container justify = "center" spacing={1} style={{marginTop: '0.5em'}}  >
 
-          <Grid item md={4} xs={6} sm ={4}>
-            <Paper className={classes.paper}></Paper>
+          <Grid item md={6} xs={6} sm ={6} style={{height: '10em' }}>
+                <img src={img3} style={{width: '100%',height: '100%'}} />
           </Grid>
-          <Grid item md={4} xs={6} sm ={4}>
-            <Paper className={classes.paper}></Paper>
+          <Grid item md={6} xs={6} sm ={6} style={{height: '10em' }}>
+                <img src={img4} style={{width: '100%',height: '100%'}} />
           </Grid>
       </Grid>
       
