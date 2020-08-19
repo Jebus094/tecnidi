@@ -45,8 +45,8 @@ export default function ServiMenu() {
             <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
           </Grid>
                  
-          <Grid  item md={4} xs={4} sm ={4} 
-                style={{height: '10em' }}> <div><img src={img1} /></div> 
+          <Grid  item md={4} xs={4} sm ={4} style={{height: '10em' }}> 
+            <img src={img1} style={{width: '100%',height: '100%'}} />
           </Grid>
 
           <Grid item md={4} xs={4} sm ={4}>
