@@ -1,112 +1,66 @@
 // import './Menu.css';
 import React from 'react';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Collapse from '@material-ui/core/Collapse';
 import { makeStyles, styled } from '@material-ui/core/styles';
-import Gal from './gallery';
-import { PersonalizadoMoto, Valla, PasaCalle, Aviso } from './fotos';
+import Paper from '@material-ui/core/Paper'
+import Grid from '@material-ui/core/Grid'
+/*import ListItem from '@material-ui/core/ListItem';*/
+/*import ListItemText from '@material-ui/core/ListItemText';*/
+/*import Collapse from '@material-ui/core/Collapse';*/
+/*import Gal from './gallery';*/
+/*import { PersonalizadoMoto, Valla, PasaCalle, Aviso } from './fotos';*/
 
+
+
+const useStyles = makeStyles((theme) => ({
+
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
 
 export default function ServiMenu() {
 
-
-  const classes = styled();
-  const [open, setOpen] = React.useState({ ImpresionDigital: false, Cortelaser: false, CalcomaniasEnCorte: false, Polarizados: false, Bolantería: false });
-  function HandleClick(Servicio) {
-    setOpen({ ImpresionDigital: false, Cortelaser: false, CalcomaniasEnCorte: false, Polarizados: false, Bolantería: false })
-    setOpen(prev => ({
-      ...prev,
-      [Servicio]: !open[Servicio]
-    }));
-  };
-
+  const classes = useStyles();
+  
   return (
-    <div className='ServiMenu'>
-      <list
-        component="nav"
-        className={classes.root}>
-        <ListItem button onClick={() => { HandleClick("ImpresionDigital") }}>
-          <ListItemText primary="Impresion Digital" />
-        </ListItem>
-        <Collapse in={open.ImpresionDigital} timeout="auto" unmountOnExit>
-              <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto} /></div>
-              <div></div>
-              <div> Personalizados de motos</div>
-              <div><Gal photos={Valla} /></div>
-              <div></div>
-              <div> Personalizados de motos</div>
-              <div><Gal photos={PasaCalle} /></div>
-              <div></div>
-              <div> Personalizados de motos</div>
-              <div><Gal photos={Aviso} /></div>
-        </Collapse>
-      </list>
+    
+    <div className={classes.root}>
+    <Grid container spacing={3}>
+      <Grid item md={12} xs={12} am={12}>
+       <h1>Impresión digital</h1>
+      </Grid>
+      <Grid container justify = "center" spacing={1} >
+       
+          <Grid item md={4} xs={4} sm ={4}>
+            <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
+          </Grid>
+          <Grid item md={4} xs={4} sm ={4}>
+            <Paper className={classes.paper}></Paper>
+          </Grid>
+          <Grid item md={4} xs={4} sm ={4}>
+            <Paper className={classes.paper}></Paper>
+          </Grid>
+          
+        
+      </Grid>
 
-      <list
-        component="nav"
-        className={classes.root}>
-        <ListItem button onClick={() => { HandleClick('Cortelaser') }}>
-          <ListItemText primary="Corte laser" />
-        </ListItem>
-        <Collapse in={open.Cortelaser} timeout="auto" unmountOnExit>
+      <Grid container justify = "center" spacing={1} style={{marginTop: '0.5em'}}  >
 
-              <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto} /></div>
-
-
-        </Collapse>
-      </list>
-
-      <list
-        component="nav"
-        className={classes.root}>
-        <ListItem button onClick={() => { HandleClick('CalcomaniasEnCorte') }}>
-          <ListItemText primary="Calcomanias en Corte" />
-        </ListItem>
-        <Collapse in={open.CalcomaniasEnCorte} timeout="auto" unmountOnExit>
-
-              <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto} /></div>
-
-        </Collapse>
-      </list>
-
-      <list
-        component="nav"
-        className={classes.root}>
-        <ListItem button onClick={() => { HandleClick('Polarizados') }}>
-          <ListItemText primary="Polarizados" />
-        </ListItem>
-        <Collapse in={open.Polarizados} timeout="auto" unmountOnExit>
-
-              <div> Personalizados de motos</div>
-              <div><Gal photos={PersonalizadoMoto} /></div>
-
-        </Collapse>
-      </list>
-
-      <list
-        component="nav"
-        className={classes.root}>
-        <ListItem button onClick={() => { HandleClick('Bolantería') }}>
-          <ListItemText primary="Volantería" />
-        </ListItem>
-
-
-
-        <Collapse in={open.Bolantería} timeout="auto" unmountOnExit>
-          <div>
-
-                <div> Personalizados de motos</div>
-                <div><Gal photos={PersonalizadoMoto} /></div>
-
-          </div>
-
-        </Collapse>
-      </list>
-    </div>
+          <Grid item md={4} xs={6} sm ={4}>
+            <Paper className={classes.paper}></Paper>
+          </Grid>
+          <Grid item md={4} xs={6} sm ={4}>
+            <Paper className={classes.paper}></Paper>
+          </Grid>
+      </Grid>
+      
+    </Grid>
+  </div>
 
   );
 }
