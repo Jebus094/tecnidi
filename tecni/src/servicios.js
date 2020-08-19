@@ -18,56 +18,56 @@ import img4 from '../src/assets/img/img4.png';
 
 const useStyles = makeStyles((theme) => ({
 
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+    root: {
+        flexGrow: 1,
+    },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
+    imgStyle: {
+        width: '100%',
+        height: '100%',
+        backgroundSize: 'cover',
+        backgroundRepeat: "no-repeat"
+    }
 }));
 
 export default function ServiMenu() {
 
-  const classes = useStyles();
-  
-  return (
-    
-    <div className={classes.root}>
-    <Grid container spacing={3}>
-      <Grid item md={12} xs={12} as={12}>
-       <h1>Impresión digital</h1>
-      </Grid>
-      <Grid container justify = "center" spacing={1} >
-       
-          <Grid item md={4} xs={4} sm ={4}>
-            <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
-          </Grid>
-                 
-          <Grid item md={4} xs={4} sm ={4} style={{height: '10em' }}> 
-                <img src={img1} style={{width: '100%',height: '100%'}} />
-          </Grid>
+    const classes = useStyles();
 
-          <Grid item md={4} xs={4} sm ={4}style={{height: '10em' }}>
-                <img src={img2} style={{width: '100%',height: '100%'}} />
-          </Grid>
-          
-        
-      </Grid>
+    return (
 
-      <Grid container justify = "center" spacing={1} style={{marginTop: '0.5em'}}  >
+        <div className={classes.root}>
+            <Grid container spacing={3}>
+                <Grid item md={12} xs={12} as={12}>
+                    <h1>Impresión digital</h1>
+                </Grid>
+                <Grid container justify="center" spacing={1} >
+                    <Grid item md={4} xs={4} sm={4}>
+                        <Paper className={classes.paper}><h2>Motos Personalizadas</h2></Paper>
+                    </Grid>
+                    <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }}>
+                        <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img1 + "')" }}></div>
+                    </Grid>
+                    <Grid item md={4} xs={4} sm={4} style={{ height: '10em' }}>
+                        <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img2 + "')" }}></div>
+                    </Grid>
+                </Grid>
 
-          <Grid item md={6} xs={6} sm ={6} style={{height: '10em' }}>
-                <img src={img3} style={{width: '100%',height: '100%'}} />
-          </Grid>
-          <Grid item md={6} xs={6} sm ={6} style={{height: '10em' }}>
-                <img src={img4} style={{width: '100%',height: '100%'}} />
-          </Grid>
-      </Grid>
-      
-    </Grid>
-  </div>
+                <Grid container justify="center" spacing={1} style={{ marginTop: '0.5em' }}  >
+                    <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }}>
+                        <div className={classes.imgStyle} style={{ backgroundImage: "url('" + img3 + "')" }}></div>
+                    </Grid>
+                    <Grid item md={6} xs={6} sm={6} style={{ height: '10em' }}>
+                        <div style={{ backgroundImage: "url('" + img4 + "')" }} className={classes.imgStyle}></div>
+                    </Grid>
+                </Grid>
 
-  );
+            </Grid>
+        </div>
+
+    );
 }
