@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         height: '100%',
         backgroundSize: 'cover',
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center"
     }
 }));
 
