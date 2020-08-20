@@ -6,7 +6,7 @@ import imagen from '../assets/mine.png';
 
 export default function Carrusel(props) {
     return (
-        <Carousel className="Carousel">
+        <Carousel>
             <img src={imagen} style={{ width: '100%', height: '80vh' }} />
             <img src={imagen} style={{ width: '100%', height: '80vh' }} />
             <img src={imagen} style={{ width: '100%', height: '80vh' }} />

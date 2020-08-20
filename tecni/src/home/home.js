@@ -1,29 +1,28 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
+import './home.css';
 export default function Inicio() {
-
     return (
 
-        <div>
+        <div className={'inicio'}>
            <Parallax
             blur={{ min: -15, max: 15 }}
-            bgImage={require('./assets/uno.jpg')}
+            bgImage={require('../assets/uno.jpg')}
             bgImageAlt="the dog"
             strength={-800}
         >
-            <div style ={{postion: 'relative',height: '10em'}}>
-                <div style={{position: 'absolute', width: '50%' , right: '0'}}>
-                    <h3>Calcomanias</h3>
+            <div className={'rightText'}>
+                <div>
+                    <h2>Calcomanias</h2>
                     <p>Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias 
                     </p>
                 </div>
             </div>
-            <div style={{ height: '200px' }} />
         </Parallax>
         <Parallax
-            bgImage={require('./assets/dos.png')}
+            bgImage={require('../assets/dos.png')}
             strength={400}
             renderLayer={percentage => (
                 <div
@@ -38,9 +37,9 @@ export default function Inicio() {
                 />
             )}
         >
-            <div style ={{postion: 'relative',height: '16em'}}>
-                <div style={{position: 'absolute', width: '50%' , left:'0'}}>
-                    <h3>Calcomanias</h3>
+            <div className={'leftText'}>
+                <div>
+                    <h2>Calcomanias</h2>
                     <p>Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias 
@@ -50,23 +49,22 @@ export default function Inicio() {
         </Parallax>
         <Parallax
             blur={10}
-            bgImage={require('./assets/tres.jpg')}
+            bgImage={require('../assets/tres.jpg')}
             bgImageAlt="the cat"
             strength={-800}
         >
-            <div style ={{postion: 'relative',height: '10em'}}>
-                <div style={{position: 'absolute', width: '50%' , right: '0'}}>
-                    <h3>Calcomanias</h3>
+            <div className={'rightText'}>
+                <div>
+                    <h2>Calcomanias</h2>
                     <p>Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias 
                     </p>
                 </div>
             </div>
-            <div style={{ height: '200px' }} />
         </Parallax>
         <Parallax
-            bgImage={require('./assets/cuatro.jpg')}
+            bgImage={require('../assets/cuatro.jpg')}
             strength={400}
             renderLayer={percentage => (
                 <div
@@ -81,9 +79,9 @@ export default function Inicio() {
                 />
             )}
         >
-            <div style ={{postion: 'relative',height: '16em'}}>
-                <div style={{position: 'absolute', width: '50%' , left:'0'}}>
-                    <h3>Calcomanias</h3>
+            <div className={'leftText'}>
+                <div>
+                    <h2>Calcomanias</h2>
                     <p>Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias Estas son unas Calcomanias 
                     Estas son unas Calcomanias 
