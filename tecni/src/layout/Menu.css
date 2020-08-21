@@ -20,9 +20,24 @@
   width:100%;
   z-index: 9;
   background-color: gray !important;
+  background-color: var(--rojo) !important;
+  height: 3em;
+  color: var(--blanco) !important;
+}
+.MenuScroll{
+  font-family: 'titulo';
+  position: fixed;
+  line-height: 3em;
+  top: 0;
+  width:100%;
+  z-index: 9;
+  background-color: transparent !important;
   height: 3em;
 }
 
-.Carousel{
-  margin-top: 60px;
+.menuText{
+  color: var(--blanco) !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
 }

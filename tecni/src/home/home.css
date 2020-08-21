@@ -1,0 +1,25 @@
+.inicio{
+    font-family: 'fuente';
+    
+}
+.inicio p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.5em;
+}
+.leftText, .rightText {
+    position: relative;
+    height: 20em;
+}
+.leftText > div{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 5%;
+}
+.rightText > div {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 5%;
+}
