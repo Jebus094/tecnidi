@@ -6,7 +6,7 @@ const Photo = ({ index, onClick, photo, margin, direction, top, left }) => {
   const imgStyle = { margin: margin };
   if (direction === "column") {
     imgStyle.position = "absolute";
-    imgStyle.left = top;
+    imgStyle.left = left;
     imgStyle.top = top;
   }
 
